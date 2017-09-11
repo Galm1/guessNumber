@@ -22,7 +22,7 @@ public class Main {
                 guessesMade++;
                 if (ranNum == userGuess) {
                     System.out.println(userGuess + " is correct!");
-                    winner = true;
+                    howManyGuesses = guessesMade;
 
                 } else if (ranNum < userGuess) {
                     System.out.println(userGuess + " is too high!");
@@ -30,8 +30,8 @@ public class Main {
                     System.out.println(userGuess + " is too low!");
                 }
             }
-        } else {
-            System.out.println("you took " + guessesMade + " guesses to win");
         }
+            System.out.println("you took " + guessesMade + " guesses to win");
+
     }
 }
